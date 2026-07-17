@@ -1,0 +1,25 @@
+:root {
+    /* 背景 */
+    --color-night: #080D12;
+    --color-navy: #101A24;
+    --color-surface: #17222C;
+    --color-surface-light: #202E39;
+
+    /* 品牌重點 */
+    --color-copper: #C8894C;
+    --color-copper-light: #DDAA70;
+    --color-copper-dark: #925B2E;
+
+    /* 文字 */
+    --color-ivory: #F2EBDD;
+    --color-text: #D6D4CE;
+    --color-muted: #929AA1;
+
+    /* 輔助 */
+    --color-wood: #71462C;
+    --color-field: #344A3B;
+
+    /* 狀態 */
+    --color-danger: #B85C55;
+    --color-success: #66876A;
+}
