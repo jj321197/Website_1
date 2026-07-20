@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Noto Serif TC";
+    src: url("./font/NotoSerifTC-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* 背景 */
     --color-night: #080D12;
@@ -22,4 +30,233 @@
     /* 狀態 */
     --color-danger: #B85C55;
     --color-success: #66876A;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: var(--color-navy);
+    font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
+}
+
+#nav,
+#about,
+#products,
+#guide,
+#craft,
+#faq {
+
+    margin-bottom: 1px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#about {
+    margin: 1px;
+}
+
+#nav {
+    background-color: var(--color-surface);
+}
+
+li a[class^='btn'] {
+    width: 90px;
+    height: 40px;
+    ;
+}
+
+.logo {
+    width: auto;
+    height: 45px;
+}
+
+#hero {
+    padding-top: 90px;
+    margin-top: 0
+}
+
+#about,
+#guide,
+#faq,
+#hero {
+    background-color: var(--color-night);
+}
+
+#products,
+#craft,
+#footer {
+    background-color: var(--color-navy);
+}
+#footer {
+    background-image: url(./img/cta-next-at-bat.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#footer li {
+    color: white;
+}
+
+h2 {
+    color: var(--color-copper);
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 15px;
+    display: inline;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-ivory);
+}
+
+h3 {
+    color: var(--color-copper-light);
+    font-style: italic;
+}
+
+h4 {
+    color: var(--color-copper-light);
+    font-weight: bold;
+}
+
+p {
+    color: var(--color-text);
+}
+
+h5 {
+    color: var(--color-wood);
+    font-weight: bold;
+}
+
+h6 {
+    color: var(--color-muted);
+}
+
+.row {
+    background-color: var(--color-night);
+}
+
+
+.card-body {
+    background-color: var(--color-surface-light);
+}
+.card img {
+    
+}
+
+.card h5 {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.card-title {
+    color: var(--color-copper-light);
+}
+
+.subcolor {
+    color: var(--color-success);
+}
+
+.card p {
+    color: var(--color-ivory);
+}
+
+#footer i {
+    color: var(--color-text);
+    font-size: 2rem
+}
+
+#products_grid li {
+    background-color: var(--color-surface-light);
+}
+
+.type {
+    color: #9ccc97;
+    font-weight: bold;
+}
+
+.price {
+    color: var(--color-danger);
+}
+
+.text_end {
+    color: var(--color-muted);
+}
+
+/* accordion 顏色調整*/
+.accordion {
+    --bs-accordion-border-color: #6f573c;
+    --bs-accordion-border-radius: 0;
+}
+
+/* 每個項目的背景 */
+.accordion-item {
+    color: #e8dfd3;
+    background-color: #17130f;
+    border-color: #6f573c;
+}
+
+/* 問題列：收合狀態 */
+.accordion-button {
+    color: #e8dfd3;
+    background-color: #211b15;
+    font-weight: 600;
+}
+
+/* 問題列：展開狀態 */
+.accordion-button:not(.collapsed) {
+    color: #d5ad63;
+    background-color: #30261c;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #6f573c;
+}
+
+/* 點擊後的焦點外框 */
+.accordion-button:focus {
+    border-color: #b88746;
+    box-shadow: 0 0 0 0.25rem rgba(184, 135, 70, 0.25);
+}
+
+/* Guide  card*/
+/* 材質比較卡片 */
+#guide .card {
+    color: var(--color-text);
+    background-color: var(--color-surface-light);
+    border-color: var(--color-copper-dark);
+}
+
+/* 卡片標題 */
+#guide .card-header {
+    color: var(--color-copper-light);
+    background-color: var(--color-surface);
+    border-color: var(--color-copper-dark);
+    font-weight: bold;
+}
+
+/* 卡片內的清單 */
+#guide .list-group-item {
+    color: var(--color-text);
+    background-color: var(--color-surface-light);
+    border-color: var(--color-copper-dark);
+}
+
+/* 表格 */
+#guide .table {
+    --bs-table-color: var(--color-text);
+    --bs-table-bg: var(--color-surface-light);
+    --bs-table-border-color: var(--color-copper-dark);
+
+    margin-bottom: 0;
+}
+
+/* 表格標題 */
+#guide .table th {
+    color: var(--color-copper-light);
 }
