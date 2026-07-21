@@ -74,8 +74,20 @@ li a[class^='btn'] {
 }
 
 #hero {
-    padding-top: 90px;
+    padding-top: 80px;
     margin-top: 0
+}
+
+#hero {
+    padding-top: 63px; /* 依你的導覽列實際高度調整 */
+}
+
+#hero .carousel-item img {
+    display: block;
+    width: 100%;
+    /* height: calc(100vh - 63px); */
+    object-fit:cover;
+    object-position: center;
 }
 
 #about,
@@ -141,7 +153,32 @@ h6 {
     background-color: var(--color-night);
 }
 
+.craft_grid h4 {
+    font-size:xx-large;
+}
 
+.craft_grid h5 {
+    font-size:1.5rem;
+}
+
+.craft_grid p {
+    font-size:larger;
+}
+
+/* 調整craft區域 大寬度時grid文字大小 */
+@media (min-width: 1400px) {
+    .craft_grid h4 {
+        font-size: 3rem;
+    }
+    .craft_grid h5 {
+        font-size: 2.5rem;
+    }
+    .craft_grid p{
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+}
+    
 .card-body {
     background-color: var(--color-surface-light);
 }
@@ -174,7 +211,8 @@ h6 {
     font-size: 2rem
 }
 
-#products_grid li {
+.type,
+.price {
     background-color: var(--color-surface-light);
 }
 
@@ -187,6 +225,16 @@ h6 {
     color: var(--color-danger);
 }
 
+/* 商品modal內規格文字 */
+#products_grid .modal-title {
+    color: var(--color-copper-light);
+}
+#products_grid .modal-body ul {
+    color: var(--color-text);
+}
+#products_grid .modal-content div {
+    background-color: var(--color-surface-light);
+}
 .text_end {
     color: var(--color-muted);
 }
