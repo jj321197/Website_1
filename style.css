@@ -42,21 +42,18 @@ body {
     font-family: "Noto Serif TC", "Microsoft JhengHei", serif;
 }
 
-#nav,
 #about,
 #products,
 #guide,
 #craft,
 #faq {
 
-    margin-bottom: 1px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
-#about {
-    margin: 1px;
-}
 
 #nav {
     background-color: var(--color-surface);
@@ -79,15 +76,14 @@ li a[class^='btn'] {
 }
 
 #hero {
-    padding-top: 63px; /* 依你的導覽列實際高度調整 */
+    padding-top: 63px;
+    /* 依你的導覽列實際高度調整 */
 }
 
 #hero .carousel-item img {
     display: block;
     width: 100%;
-    /* height: calc(100vh - 63px); */
-    object-fit:cover;
-    object-position: center;
+    height: auto;
 }
 
 #about,
@@ -102,10 +98,11 @@ li a[class^='btn'] {
 #footer {
     background-color: var(--color-navy);
 }
+
 #footer {
     background-image: url(./img/cta-next-at-bat.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 #footer li {
@@ -140,6 +137,13 @@ p {
     color: var(--color-text);
 }
 
+#product_grid p {
+    font-family: '微軟正黑體';
+}
+p.card-text {
+    font-family: '微軟正黑體';
+}
+
 h5 {
     color: var(--color-wood);
     font-weight: bold;
@@ -154,15 +158,19 @@ h6 {
 }
 
 .craft_grid h4 {
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 .craft_grid h5 {
-    font-size:1.5rem;
+    font-size: 1.5rem;
 }
 
 .craft_grid p {
-    font-size:larger;
+    font-size: larger;
+}
+
+.craft_grid img {
+    border-radius: 5%;
 }
 
 /* 調整craft區域 大寬度時grid文字大小 */
@@ -170,20 +178,19 @@ h6 {
     .craft_grid h4 {
         font-size: 3rem;
     }
+
     .craft_grid h5 {
         font-size: 2.5rem;
     }
-    .craft_grid p{
+
+    .craft_grid p {
         font-size: 2rem;
         line-height: 3.5rem;
     }
 }
-    
+
 .card-body {
     background-color: var(--color-surface-light);
-}
-.card img {
-    
 }
 
 .card h5 {
@@ -229,12 +236,15 @@ h6 {
 #products_grid .modal-title {
     color: var(--color-copper-light);
 }
+
 #products_grid .modal-body ul {
     color: var(--color-text);
 }
+
 #products_grid .modal-content div {
     background-color: var(--color-surface-light);
 }
+
 .text_end {
     color: var(--color-muted);
 }
@@ -308,3 +318,22 @@ h6 {
 #guide .table th {
     color: var(--color-copper-light);
 }
+
+.exec_img {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor:pointer;
+    }
+.exec_img:hover {
+    transform: scale(1.2);
+
+}
+
+@media (min-width: 1440px) {
+    .exec_img{
+    width: 100px;
+    height: 100px;}
+    }

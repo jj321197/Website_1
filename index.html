@@ -11,7 +11,7 @@
     <style></style>
 </head>
 
-<body  class="container-fluid">
+<body class="container-fluid">
     <header>
         <nav id="nav" class="fixed-top">
 
@@ -19,7 +19,7 @@
                 class=" container-fluid container-lg d-flex flex-column flex-lg-row justify-content-between align-items-center">
                 <div class="mt-0 ms-0 ps-0"><img class="img-fluid logo" src="./img/logo.png" alt="LOGO"></div>
                 <ul class="d-flex flex-row flex-nowrap flex-md-row flex-lg-row list-unstyled justify-content-center">
-                    <li class="p-0 me-2"><a class="btn btn-outline-light" href="#">首頁</a></li>
+                    <li class="p-0 me-2 d-none d-md-inline-block"><a class="btn btn-outline-light" href="#">首頁</a></li>
                     <li class="p-0 me-2"><a class="btn btn-outline-light" href="#about">品牌起源</a></li>
                     <li class="p-0 me-2"><a class="btn btn-outline-light" href="#products">球棒系列</a></li>
                     <li class="p-0 me-2"><a class="btn btn-outline-light" href="#guide">材質比較</a></li>
@@ -31,7 +31,7 @@
         <!-- <section id="hero"><img class="img-fluid" src="./img/hero.png" alt="長寬Hero視覺圖"></section> -->
         <section id="hero">
             <!--  Hero Carousel  -->
-            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" id="hero_carousel">
+            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" id="hero_carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#hero_carousel" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -69,6 +69,7 @@
     <main>
         <!-- 品牌起源 About  區塊 -->
         <section id="about">
+            <br><br>
             <div>
                 <h2>品牌起源 About</h2>
                 <span>ORIGIN / 09</span>
@@ -652,6 +653,7 @@
 
             </div>
         </section>
+        <hr>
         <section id="craft" class="container-fluid">
             <h2>製棒工藝 Craft</h2>
             <span>THE MAKING OF A MARK</span>
@@ -661,35 +663,37 @@
                 <p>烙印是製作的最後一步，但在那之前，每支球棒都必須經過選材、車削、打磨與平衡檢查。
                     每一道程序都有可以測量的目的。烙印只是留下名字，不是魔法發生的那一步。</p>
             </div>
-            <div class="craft_grid row row-cols-1 row-cols-md-2 justify-content-center align-items-center">
+            <div class="craft_grid row row-cols-1 row-cols-md-2 justify-content-center align-items-center g-2">
                 <div class="col"><img class="img-fluid" src="./img/craft/craft-01-select.png" alt=""></div>
-                <div>
+                <div class="col">
                     <h4>步驟一｜選材 SELECT </h4>
                     <h5>先理解木材，再決定它適合成為什麼。</h5>
                     <p>檢查木材的紋理、密度、筆直程度與天然差異，依照材料特性安排適合的棒型。
                         不是每塊木材都適合成為力量型球棒。木材對職涯的選擇，有時比人類更務實。</p>
                 </div>
-                <div class="col"><img class="img-fluid" src="./img/craft/craft-02-turn.png" alt=""></div>
-                <div>
+                <div class="col">
                     <h4>步驟二｜車削 TURN</h4>
                     <h5>塑造握把、棒頸與擊球部比例。</h5>
                     <p>依照各系列規格進行車削，控制握把粗細、擊球部尺寸與整體輪廓。
                         外型的每一次改變，都會影響重量分布與揮擊感。</p>
                 </div>
+                <div class="col"><img class="img-fluid" src="./img/craft/craft-02-turn.png" alt=""></div>
+
                 <div class="col"><img class="img-fluid" src="./img/craft/craft-03-balance.png" alt=""></div>
-                <div>
+                <div class="col">
                     <h4>步驟三｜平衡 BALANCE</h4>
                     <h5>重量不是只有多少，還包括它在哪裡。</h5>
                     <p>測量球棒總重量與重心位置，確認棒頭、棒頸與握把之間的分配符合系列設定。
                         同樣重量的兩支球棒，也可能帶來完全不同的揮擊感。</p>
                 </div>
-                <div class="col"><img class="img-fluid" src="./img/craft/craft-04-mark.png" alt=""></div>
-                <div>
+
+                <div class="col">
                     <h4>步驟四｜烙印 MARK</h4>
                     <h5>標示材質、型號與它的出身。</h5>
                     <p>完成表面處理後，烙上品牌印記、產品型號與材質標示。
                         從此之後，下一道痕跡將由打者自己留下。</p>
                 </div>
+                <div class="col"><img class="img-fluid" src="./img/craft/craft-04-mark.png" alt=""></div>
 
 
 
@@ -697,10 +701,13 @@
 
 
             </div>
-            <span>(收尾引言)木材留下年輪，工匠留下烙印，打者留下擊球痕跡。
+            <span class="d-block text-center fs-3 text-info fw-bold">木材留下年輪，工匠留下烙印，打者留下擊球痕跡。
                 一支球棒真正的故事，從完成製作之後才開始。</span>
         </section>
+        <br>
         <section id="faq" class="container-fluid">
+            <br>
+            <br>
             <h2>FAQ 常見問題</h2>
             <span>FREQUENTLY ASKED QUESTIONS</span>
             <h3>有些問題，最好在站上打擊區以前問</h3>
@@ -845,12 +852,54 @@
                 </div>
             </div>
         </section>
+        <aside>
+            <a data-bs-toggle="modal" data-bs-target="#exec"><img class="exec_img img-fluid" src="./img/exec.png"
+                    alt=""></a>
+            <div data-bs-backdrop="static" id="exec" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">價格試算：</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <fieldset>
+                                    <legend></legend>
+                                    <label>商品一｜迅羽(NT$3,280)，數量：</label>
+                                    <input type="number" id="product1">
+                                    <label>商品二｜沉星(NT$4,680)，數量：</label>
+                                    <input type="number" id="product2">
+                                    <label>商品三｜中軸(NT$3,980)，數量：</label>
+                                    <input type="number" id="product3">
+                                    <label>商品四｜定界(NT$3,580)，數量：</label>
+                                    <input type="number" id="product4">
+                                    <label>商品五｜初痕(NT$2,680)，數量：</label>
+                                    <input type="number" id="product5">
+                                    <label>商品六｜第九式(NT$6,980)，數量：</label>
+                                    <input type="number" id="product6">
+                                    <br>
+                                    <button id="button" type="submit">送出</button>
+                                    <button type="reset">清除</button>
+                                    <hr>
+                                    <p id="result_text" style="color: blue;font-size: large;">總金額：</p>
+
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </main>
 
     <footer id="footer" class="container-fluid">
         <h3 class="fw-bold fst-normal">聯絡資訊</h3>
         <ul>
-            <li>電子信箱：service@ninthsigil.example</li>
+            <li>電子信箱：<a href="mailto:serviece@ninthsigil.example">service@ninthsigil.example</a></li>
             <li>服務時間：週一至週五 10:00–18:00</li>
             <li>所在地：台灣</li>
         </ul>
@@ -870,8 +919,31 @@
 
 
 
-
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 價格試算
+        function sum(a, b, c, d, e, f) {
+            const result = a * 3280 + b * 4680 + c * 3980 + d * 3580 + e * 2680 + f * 6980;
+            return result;
+        }
+
+        const button = document.getElementById('button')
+        const text = document.getElementById('result_text')
+
+        const showValue = button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const a = Number(document.getElementById('product1').value);
+            const b = Number(document.getElementById('product2').value);
+            const c = Number(document.getElementById('product3').value);
+            const d = Number(document.getElementById('product4').value);
+            const e = Number(document.getElementById('product5').value);
+            const f = Number(document.getElementById('product6').value);
+            let result_value = sum(a, b, c, d, e, f);
+            text.innerHTML = `總金額：${result_value}元`
+        })
+
+
+    </script>
 </body>
 
 </html>
