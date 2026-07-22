@@ -85,6 +85,10 @@ li a[class^='btn'] {
     width: 100%;
     height: auto;
 }
+.about_img:hover {
+    content: url('./img/brand-origin2.png');
+    width: 100%;
+}
 
 #about,
 #guide,
@@ -243,6 +247,10 @@ h6 {
 
 #products_grid .modal-content div {
     background-color: var(--color-surface-light);
+}
+#products_grid img:hover {
+    transform: scale(1.01);
+    border: 1px dashed black;
 }
 
 .text_end {
